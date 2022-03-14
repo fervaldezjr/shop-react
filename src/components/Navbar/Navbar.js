@@ -1,6 +1,4 @@
 import React from "react";
-import './Navbar.scss';
-
 
 const Navbar = () => {
     let navlist = document.getElementById('navlist');
