@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaShoppingBag } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
@@ -8,6 +8,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
 } from "./NavbarElements";
 
 const Navbar = () => {
@@ -23,7 +25,21 @@ const Navbar = () => {
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="proyects">Proyects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/cart">
+              <FaShoppingBag />
+            </NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
